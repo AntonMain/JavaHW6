@@ -4,7 +4,7 @@ import ru.netology.javaGroup.JavaQa.SqrtService;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TestRangeOfNimbers {
+public class TestRangeOfNumbers {
     @ParameterizedTest
     @CsvFileSource(files="src/test/resources/Range.csv")
     void checkingTheRangeOfNumbers(int expected, int from, int before) {
