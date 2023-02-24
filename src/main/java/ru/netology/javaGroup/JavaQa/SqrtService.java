@@ -1,15 +1,12 @@
 package ru.netology.javaGroup.JavaQa;
 
 public class SqrtService {
-    public int calculate(int from, int before) {
+    public int calculate(int x, int y) {
         int numberOfOccurences = 0;
 
-        for (; from < before; from++) {
-            for (int i = 9; i < 99; i++) {
-                if (i * i == from) {
-                    numberOfOccurences++;
-                    System.out.println(numberOfOccurences);
-                }
+        for (int i = 10; i <= 99; i++) {
+            if ((i * i >= x) & (i * i <= y)) {
+                numberOfOccurences++;
             }
         }
         return numberOfOccurences;
